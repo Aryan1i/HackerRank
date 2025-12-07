@@ -1,0 +1,59 @@
+//Problem
+
+/*  You are given an integer age.
+    Your task is to check whether the person is eligible to vote.
+    
+    A person is eligible to vote if:
+    
+    age ≥ 18
+    Input Format
+    
+    Single integer input: {age}
+    
+    Constraints
+    
+    0 ≤ age ≤ 150
+    Output Format
+    
+    You must print:
+    
+    "Eligible" or "Not Eligible"
+    Sample Input 0
+    
+    20
+    Sample Output 0
+    
+    Eligible
+    Sample Input 1
+    
+    17
+    Sample Output 1
+    
+    Not Eligible
+    Sample Input 2
+    
+    18
+    Sample Output 2
+    
+    Eligible
+*/
+
+//Solution
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */  
+    int age;
+    scanf("%d",&age);
+    if(age>=18){
+        printf("Eligible");
+    } else {
+        printf("Not Eligible");
+    }
+    return 0;
+}
