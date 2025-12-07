@@ -1,0 +1,57 @@
+//Problem
+
+/* You are given three integers n, low, high.
+    
+    Your task is to check if n is in the inclusive range [low, high].
+    
+    Input Format
+    
+    Three space separated integers: {n} {low} {high}
+    
+    Constraints
+    
+    -10^9 ≤ n, low, high ≤ 10^9
+    Output Format
+    
+    You must print:
+    
+    "In Range" or "Out of Range"
+    
+    Sample Input 0
+    
+    10 5 20
+    Sample Output 0
+    
+    In Range
+    Sample Input 1
+    
+    4 5 10
+    Sample Output 1
+    
+    Out of Range
+    Sample Input 2
+    
+    15 15 30
+    Sample Output 2
+    
+    In Range
+ */
+
+//Solution
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+ 
+    int n,low,high;
+    scanf("%d%d%d",&n,&low,&high);
+    if(n<high && n>=low){
+        printf("In Range");
+    } else {
+        printf("Out of Range");
+    }
+    return 0;
+}
