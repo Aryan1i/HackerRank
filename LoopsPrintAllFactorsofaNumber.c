@@ -43,23 +43,13 @@ Sample Output 2
 
 int main() {
 
-    long long N;
-    scanf("%lld", &N);
-
-    long long large[100000];
-    int k = 0;
-
-    for (long long i = 1; i * i <= N; i++) {
-        if (N % i == 0) {
-            printf("%lld ", i);
-            if (i != N / i) {
-                large[k++] = N / i;
-            }
+    int n;
+    scanf("%d",&n);
+    
+    for(int i=1;i<=n;i++){
+        if(n%i==0){
+            printf("%d ",i);
         }
     }
-
-    for (int i = k - 1; i >= 0; i--) {
-        printf("%lld ", large[i]);
-    }    
     return 0;
 }
